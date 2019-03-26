@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+
+
+@import 'css/bootstrap/bootstrap.min.css';
+@import 'css/others/font-awesome.min.css';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: auto;
+
+}
+
+
+/* Hero Area CSS */
+
+.fplus-hero-area {
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    padding-top: 250px;
+}
+
+    .fplus-hero-area h1 {
+        color: #f2f2f2;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        /*height: 80%;*/
+        text-align: center;
+        letter-spacing: .15em;
+        font-weight: bold;
+        animation: typing 3.5s steps(40, end), .5s step-end infinite;
+    }
+
+    .fplus-hero-area p {
+        padding-top: 10px;
+        padding-bottom: 60px;
+        width: 100%;
+        /*height: 100%;*/
+        text-align: center;
+        letter-spacing: .18em;
+        font-weight: bold;
+        color: #c5b8b8;
+    }
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%}
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: orange}
+}
+
+/*Footer Area CSS */
+
+.fplus-footer-area {
+    padding: 40px;
+    background-color: #252525;
+}
+
+        .fplus-footer-area i:hover {
+            color: #c32aa3;
+        }
+        .fplus-footer-area t:hover {
+            color: #1dcaff;
+        }
+        .fplus-footer-area f:hover {
+            color: #3B5998;
+        }
+        .fplus-footer-area l:hover {
+            color: #4875B4;
+        }
+    .fplus-footer-area e:hover {
+        color: #606060;
+    }
+
+.footer-social-widget {
+    margin-top: 30px;
+}
+
+.footer-social-widget > a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-right: 30px;
+}
+
+.footer-social-widget > a:hover,
+.footer-social-widget > a:focus {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-social-widget > a:last-child {
+    margin-right: 0;
+}
